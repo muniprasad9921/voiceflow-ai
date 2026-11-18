@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import React from "react";
 import { ThemeProvider } from "next-themes";
 import { Toaster } from "sonner";
-import { FloatingChat } from "@/components/chat/floating-chat";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -77,7 +76,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           {children}
           <Toaster position="top-right" richColors />
-          <FloatingChat />
         </ThemeProvider>
       </body>
     </html>
