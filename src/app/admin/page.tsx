@@ -1,6 +1,7 @@
 import { Building2, Users, CreditCard, Activity, PhoneCall, AlertTriangle, LifeBuoy, Server } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { AdminChatManager } from "@/components/admin/admin-chat-manager"
 
 export default function SuperAdminPage() {
   const metrics = [
@@ -115,6 +116,9 @@ export default function SuperAdminPage() {
           </Card>
         </div>
       </div>
+
+      {/* AI Chat Support & Visitor Intelligence */}
+      <AdminChatManager />
     </div>
   )
 }
